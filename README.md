@@ -4,6 +4,23 @@ offy-pack-azure-function
 The offy-pack as a serverless Azure function.
 
 
+Deployment with GitHub Actions
+------------------------------
+
+__offy-pack-azure-function__ supports GitHub Actions to build and deploy to Azure automatically following a push to the master branch.  This workflow can also be triggered manually from the Actions tab.
+
+The Actions require the following variables/secrets:
+- `AZURE_FUNCTIONAPP_NAME` (ex: offy-pack-example) as an Actions Variable
+- `SCM_CREDENTIALS` as an Actions Secret
+
+The `SCM_CREDENTIALS` can be retrieved from the Azure Portal as follows:
+- browse to the Function App
+- select _Get publish profile_ from the Overview page
+- save the .PublishSettings file
+- under the Settings tab of this GitHub repository, select Security - Secrets and Variables - Actions
+- create a _New repository secret_ called `SCM_CREDENTIALS` and paste in the contents of the file
+
+
 License
 -------
 
