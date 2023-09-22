@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "queueName": "surveys",
+      "connection": "OrgServiceBusConnection",
+      "name": "survey",
+      "type": "serviceBusTrigger",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
