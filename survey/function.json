@@ -2,7 +2,7 @@
   "bindings": [
     {
       "queueName": "surveys",
-      "connection": "OrgServiceBusConnection",
+      "connection": "FacilityServiceBusConnection",
       "name": "survey",
       "type": "serviceBusTrigger",
       "direction": "in"
